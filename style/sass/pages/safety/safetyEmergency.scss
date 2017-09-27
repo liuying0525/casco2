@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "basetype";
+
+.safety{
+    @extend %TabNav;
+    .Tab1{
+        background: url(../../../../images/safetyEmergency/Group6.png) no-repeat 17% center;
+    }
+    .Tab1.on{
+        background: url(../../../../images/safetyEmergency/Group6a.png) no-repeat 17% center;
+        background-size:contain ;
+    }
+     .Tab2{
+        background: url(../../../../images/safetyEmergency/Group3.png) no-repeat 17% center;
+    }
+      .Tab2.on{
+        background: url(../../../../images/safetyEmergency/Group3a.png) no-repeat 17% center;
+        background-size:contain ;
+    }
+}

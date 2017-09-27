@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>故障处理</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--通用 meta-->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+   	<link rel="stylesheet" type="text/css" href="../style/css/basic/main.css">
+   	<link rel="stylesheet" type="text/css" href="../style/css/pages/malfunction.css">
+   	<link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.min.css">
+   	<script type="text/javascript" src="../js/public.js"></script>
+
+</head>
+<body>
+	<div class="page">
+		<!-- 故障处理 个人收藏夹tab start -->
+		<div class="page-header">
+			<span class="header-item" state="fault">
+				<span class="header-icon on"></span>
+				<span class="header-title on">故障处理指南</span>
+			</span>
+			<span class="header-item" state="personal" id="personal">
+				<span class="header-icon2"></span>
+				<span class="header-title">个人收藏夹</span>
+			</span>
+			<span class="header-item" id="search" >
+				<span class="header-icon3"></span>
+			</span>
+		</div>
+		<!-- 故障处理 个人收藏夹tab end -->
+		<div class="tab-cont">
+			<!-- 故障处理 start -->
+			<div class="guide-cont">
+				<ul class="page-tab" id="tab1"></ul>
+				<div class="page-cont" id="page-cont">
+					<div class="cont-item">
+						<div class="title">
+							<span>其他</span>
+						</div>
+						<ul class="cont-list favorite-list">
+							<li>
+									<p>中心全线站场显示故障状态</p>
+									<span></span>
+							</li>
+							<li>
+								<div class="list-scroll">
+								<p>中心列车位置显示与实际有较大延迟</p>
+								<div class="cancel">
+									<button><em>取消</em><em>收藏</em></button>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 故障处理 end -->
+			<!-- 个人收藏 start -->
+			<div class="favorite" style="display: none;">
+				<ul class="page-tab" id="tab2"></ul>
+				<div class="page-cont" id="page-cont1">
+					<!-- <div class="cont-item">
+						<div class="title">
+							<span>其他</span>
+						</div>
+						<ul class="cont-list favorite-list">
+							<li>
+								<div class="list-scroll">
+									<p>中心全线站场显示故障状态</p>
+									<div class="cancel">
+										<button><em>取消</em><em>收藏</em></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="list-scroll">
+								<p>中心列车位置显示与实际有较大延迟</p>
+								<div class="cancel">
+									<button><em>取消</em><em>收藏</em></button>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+			<!-- 个人收藏 end -->
+		</div>
+	</div>
+	<script type="text/javascript" src="/casco/lib/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../lib/mui/js/mui.zoom.js"></script>
+	<script type="text/javascript" src="../lib/mui/js/mui.previewimage.js"></script>
+	<script type="text/javascript" src="/casco/js/pages/cancel.js" defer="defer"></script>
+	<script type="text/javascript" src="/casco/js/pages/malfunction.js"></script>
+	<script>
+		mui.previewImage();
+	</script>
+	<!-- 故障详情modal start -->
+	<div class="modal" style="display:block;">
+		<div class="modal-body">
+			<div class="modal-header">
+				<span>故障详情</span>
+			</div>
+			<div class="modal-cont">
+				<div class="fault-name">
+					<span class="icon"></span>
+					<span class="name">故障名称</span>
+					<span class="cont" id="faultName"></span>
+				</div>
+				<div class="fault-name">
+					<span class="icon"></span>
+					<span class="name">故障判断</span>
+					<span class="cont" id="faultJudge"></span>
+				</div>
+				<div class="fault-name" >
+					<span class="icon"></span>
+					<span class="name">处理步骤</span>
+				</div>
+				<div id="faultImg">
+					<p>
+						<img src="../images/progress1.png" data-preview-src="" data-preview-group="1">
+					</p>
+				</div>
+			</div>
+			<div class="modal-foot" id="closeBtn">
+				<img src="/casco/images/close@2x.png" alt="close" >
+			</div>
+		</div>
+	</div>
+	<!-- 故障详情modal end -->
+	<div class="cover"></div>
+	<div class="tips" style="display: none;">
+		<!-- <span>收藏成功</span>
+		<span>至个人收藏夹查看</span> -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import "../../basic/main";
+$basecolor:#e0824d;
+$asecolor:#555;
+$linecolor:#d1d1d1;
+
+body{
+    background:#f7f7f7;
+    color: #333;
+    font-size: $font24;
+}
+
+#app{
+    width:100%;
+}
+
+      @font-face {font-family: "iconfont";
+          src: url('../../../../fronticon/iconfont.eot'); /* IE9*/
+          src: url('../../../../fronticon/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../../../../fronticon/iconfont.woff') format('woff'), /* chrome, firefox */
+          url('../../../../fronticon/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('../../../../fronticon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+          font-family:"iconfont" !important;
+          font-size:pxToRem(54px);
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+
+
+%TabNav{
+    .navTab{
+        position:fixed;
+        width: 100%;
+        bottom: 0;
+        @include fatherBox();
+        justify-content: center;
+        border-top:pxToRem(2px) solid $linecolor;
+        padding:pxToRem(10px) 0 pxToRem(13px);
+        strong{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+             
+            width:50%;
+            height:pxToRem(98px);
+           text-align: center;
+            font-size: pxToRem(16px);
+            background-size: contain;
+            font-weight: normal;
+            &.on{
+                font-weight:bold;
+            }
+            &.Tab1{
+                position: relative;
+            }
+        }
+    }
+    
+    .navBox{
+        display: none;
+        &.on{
+            display: block;
+        }
+        .classTab{
+            width: 100%;
+            @include fatherBox();
+            justify-content:space-around;
+            background: #fff;
+            margin-top: pxToRem(21px);
+            strong{
+                font-weight: normal;
+                font-size: pxToRem(24px);
+                color: $basecolor;
+                @include wh(120px,60px);
+                text-align: center;
+                &.on{
+                    font-weight:bold;
+                    font-size: pxToRem(26px);
+                    background: url("../../../../images/safetyEmergency/Rectangle 2.png") no-repeat center bottom;                    
+                }
+            }
+        }
+        
+       .classBox{
+           margin:pxToRem(7px) pxToRem(15px) 0;
+           display: none;
+           &.on{
+               display: block;
+           }
+           h6{
+             font-size: $font28; 
+             height:pxToRem(68px);
+             line-height:pxToRem(68px);
+             font-weight: normal; 
+             text-shadow: 0 0.1px 0 #000;
+           }
+           dl{
+               padding:pxToRem(30px) pxToRem(64px) pxToRem(18px) pxToRem(20px);
+               margin-bottom:pxToRem(20px);
+               background: #fff;
+               @include borderRadius(16px);
+               @include fatherBox(column nowrap);               
+           } 
+       }
+    }    
+}

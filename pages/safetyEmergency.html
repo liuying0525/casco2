@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>安全应急</title>
+		<link rel="stylesheet" type="text/css" href="../style/css/pages/safety/safetyEmergency.css"/>		
+	</head>
+	<body>
+		<div id="app">
+			<div class="safety">
+				<div class="navTab"><strong class="Tab1 on">故障类型</strong><strong class="Tab2">应急处置</strong></div>
+				<div class="navBox on" id="Tab1">
+					<div class="classTab">
+						<strong class="cTab1 on">I类故障</strong>
+						<strong class="cTab2">II类故障</strong>
+						<strong class="cTab3">III类故障</strong>
+					</div>
+					<div class="classBox on" id="cTab1">
+						<h6>信号专业</h6>
+						<dl>
+							<dt>联锁系统</dt>
+							<dd>大面积联锁区灰显或红显</dd>
+							<dd>正线道岔、车辆段及停车场关键岔失表</dd>
+							<dd>折返站计轴区段红（棕）光带，直接复零后红光带不消失；或者预复零后，列车压过后红光带不消失</dd>
+							<dd>段、场咽喉区轨道区段红光带长时间不能恢复（早晚高峰时段）</dd>
+							<dd>集中站管辖范围内，所有信号设备失电，无法正常使用</dd>
+						</dl>
+						<dl>
+							<dt>ATS系统</dt>
+							<dd>全线列车无法使用ATO\ATP驾驶模式</dd>
+							<dd>全线列车出现车次框白色闪烁，ATS将无法对线上列车进行操作，如ATS扣车、紧停、临时限速、更改车次号、追踪号、进路无法自动触发等</dd>
+							
+						</dl>
+						<dl>
+							<dt>车载系统</dt>
+							<dd>车载信号设备故障导致清客</dd>
+						</dl>
+						<dl>
+							<dt>DCS系统</dt>
+							<dd>DCS网络故障导致全线或多站系统通信中断</dd>
+						</dl>
+
+					</div>
+					<div class="classBox" id="cTab2">
+						<h6>信号专业</h6>
+						<dl>
+							<dt>联锁系统</dt>
+							<dd>整个联锁区ATS或LCW、现地工作站通信中断</dd>
+							<dd>非折返站道岔区段红（棕）光带，预复零或直接复零不成功</dd>
+						</dl>
+						<dl>
+							<dt>ATS系统</dt>
+							<dd>大面积PIS到站信息显示异常（如时间不准，耐心等待等信息）</dd>
+							<dd>全线进路不能自动触发</dd>
+							<dd>中央ATS显示多个联锁站MFA、B显红；</dd>
+							<dd>中央ATS显示多个联锁区屏蔽门报警</dd>
+						</dl>
+						<dl>
+							<dt>车载系统</dt>
+							<dd>车载信号设备故障导致信号模式不可用</dd>
+						</dl>
+						<dl>
+							<dt>DCS系统</dt>
+							<dd>DCS网络故障导致单站或单系统通信中断</dd>
+						</dl>
+						<dl>
+							<dt>通信专业</dt>
+							<dd>传输子系统</dd>
+						</dl>
+					</div>
+					<div class="classBox"id="cTab3">						
+						<h6>信号专业</h6>
+						<dl>
+							<dt>联锁系统</dt>
+							<dd>道岔转换过程中在ATS/LCW上短暂红闪后恢复</dd>
+							<dd>电源屏幕块指示灯显示不正常，或漏电报警</dd>
+						</dl>
+						<dl>
+							<dt>ATS系统</dt>
+							<dd>ATS服务器工作站与时钟不同步，ATS一般硬件设备故障，不影响运营（如键盘、鼠标坏等），进路触发/排列问题</dd>
+						<dd>单台调度工作站故障暂时不能恢复</dd> 
+							<dd>非集中站工作站故障</dd>
+						</dl>
+						<dl>
+							<dt>车载系统</dt>
+							<dd>车载信号设备故障导致换备车、多次EB、列车完整性丢失、欠标/过标、无门使能、车门屏蔽门不联动等</dd>
+							<dd>CBTC模式信号机故障（不影响行车）</dd>
+						</dl>
+						<dl>
+							<dt>DCS系统</dt>
+							<dd>单网AP模块报警</dd>
+							<dd>单网A交换机报警</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="navBox" id="Tab2">
+					<div class="classTab">
+						<strong class="bTab1 on">调度1</strong>
+						<strong class="bTab2">调度2</strong>
+						<strong class="bTab3">调度3</strong>
+					</div>
+					<div class="classBox" id="bTab1">
+						<h6>调度岗位-值班组长</h6>
+						<dl>
+							<dt><b>通知岗位：</b><span>中心安全工作微信群</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;1分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/发布</span>
+										<span>II类/发布</span>
+										<span>III类/发布</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>--</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>车间主任</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;2分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/通知</span>
+										<span>III类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>中心值班领导</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;3分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="classBox" id="bTab2">
+						<h6>调度岗位-生产调度</h6>
+						<dl>
+							<dt><b>通知岗位：</b><span>专业微信群发布</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;1分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/发布</span>
+										<span>II类/发布</span>
+										<span>III类/发布</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>--</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>应急值班人员</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;2分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/到岗</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;30分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>OCC保驾轮值工程师（当日）</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;3分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/到岗</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="classBox on" id="bTab3">
+						<h6>调度岗位-生产调度</h6>
+						<dl>
+							<dt><b>通知岗位：</b><span>相应区域包保工班长</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;1分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/到岗</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>中心技术志愿队</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;2分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>成都地铁线网化联动</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>视情况</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>视情况</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>视情况</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+		<script src="../lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/public.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="../js/safety/safetyEmergency.js"  charset="utf-8"></script>
+</html>

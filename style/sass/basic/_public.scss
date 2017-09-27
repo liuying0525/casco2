@@ -1,0 +1,45 @@
+@charset "UTF-8";
+$baseColor:#009241;
+//24 28 30 fontzise
+$font24:0.6rem;
+$font28:0.7rem;
+$font30:0.75rem;
+
+//字体颜色
+$fontColor333:#333;
+$fontColor666:#666;
+$fontColor999:#999;
+
+//边框颜色
+$borderColor:#dedee2;
+$lineColor:#d7d7d7;
+$background:#efefef;
+
+body,html{
+    background-color:$background;
+    box-sizing: border-box;
+    font-size:20px;
+}
+
+a,span{display: inline-block;}
+
+
+  @mixin bigbutton(){
+      border-radius: 1rem;
+      background: $baseColor;
+      color:#fff;
+      height:4.5rem;
+      line-break: 4.5rem;
+      font-size:$font28;
+      text-align: center;      
+  }
+
+input{
+    border:none;
+}
+
+.clearfix{
+    content:"";
+    display: block;
+    clear: both;
+}

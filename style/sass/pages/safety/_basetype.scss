@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import "../../basic/main";
+$basecolor:#e0824d;
+$asecolor:#555;
+$linecolor:#d1d1d1;
+$font20:pxToRem(20px);
+$font24:pxToRem(24px);
+$font26:pxToRem(26px);
+$font28:pxToRem(28px);//h6
+
+body{
+    background:#f7f7f7;
+    color: #333;
+    font-size: $font24;
+}
+
+#app{
+    width:100%;
+}
+
+%faultType{
+       dt{
+         font-size: $font26;
+         padding-bottom:pxToRem(13px);
+         text-shadow: 0 0.1px 0 #000;
+       }
+       dd{
+          line-height: 0.9rem;
+          padding:pxToRem(10px) 0 pxToRem(10px) pxToRem(48px);
+          color: $asecolor;
+          position: relative;
+          &:before{
+              content:"";
+              @include wh(24px,24px);
+              border-radius: 50%;
+              background: #65b2bf;
+              position:absolute;
+              left: pxToRem(3px);
+              top:pxToRem(14px);
+          } 
+       }
+}
+
+%emergency{
+    b{
+      font-size: $font26;
+      height:pxToRem(40px);
+      line-height:pxToRem(40px);  
+      font-weight: normal; 
+      text-shadow: 0 0.1px 0 #000;
+      
+    }
+    dt,dd{
+        @include fatherBox();
+        justify-content: flex-start;
+        margin-right:pxToRem(20px);
+    }
+    dt span,dd ul li:nth-child(odd){
+        font-size:$font24;
+        color: $asecolor;        
+        height:pxToRem(40px);
+        line-height:pxToRem(40px);  
+    }
+    dd{
+        margin-top:pxToRem(14px);
+        ul{
+            li{               
+                &:nth-child(even){
+                    font-size:$font20;
+                    color:#999;
+                    height:pxToRem(34px);
+                    line-height:pxToRem(34px);
+                    padding-bottom:pxToRem(13px); 
+                    span{
+                        margin-right:pxToRem(30px);
+                    }  
+                }
+            }
+        }
+    }
+    
+
+}
+
+%TabNav{
+    .navTab{
+        @include fatherBox();
+        justify-content: center;
+        border-bottom:pxToRem(2px) solid $linecolor;
+        padding:pxToRem(10px) 0 pxToRem(13px);
+        margin:0 pxToRem(13px);
+        strong{
+            width:50%;
+            height:pxToRem(62px);
+            line-height: pxToRem(62px);
+            font-size: pxToRem(26px);
+            padding-left:20%;
+            background-size: contain;
+            font-weight: normal;
+            &.on{
+                font-weight:bold;
+            }
+            &.Tab1{
+                position: relative;
+                &:after{
+                    content: "";
+                    height:pxToRem(60px);
+                    width: pxToRem(2px);
+                    background: $linecolor;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    
+    .navBox{
+        display: none;
+        &.on{
+            display: block;
+        }
+        .classTab{
+            width: 100%;
+            @include fatherBox();
+            justify-content:space-around;
+            background: #fff;
+            margin-top: pxToRem(21px);
+            strong{
+                font-weight: normal;
+                font-size: pxToRem(24px);
+                color: $basecolor;
+                @include wh(120px,60px);
+                text-align: center;
+                &.on{
+                    font-weight:bold;
+                    font-size: pxToRem(26px);
+                    background: url("../../../../images/safetyEmergency/Rectangle 2.png") no-repeat center bottom;                    
+                }
+            }
+        }
+        
+       .classBox{
+           margin:pxToRem(7px) pxToRem(15px) 0;
+           display: none;
+           &.on{
+               display: block;
+           }
+           h6{
+             font-size: $font28; 
+             height:pxToRem(68px);
+             line-height:pxToRem(68px);
+             font-weight: normal; 
+             text-shadow: 0 0.1px 0 #000;
+           }
+           dl{
+               padding:pxToRem(30px) pxToRem(64px) pxToRem(18px) pxToRem(20px);
+               margin-bottom:pxToRem(20px);
+               background: #fff;
+               @include borderRadius(16px);
+               @include fatherBox(column nowrap);               
+           } 
+       }
+    }    
+}
+
+.navBox#Tab1 .classBox{
+    dl{
+        @extend %faultType; 
+    }
+}
+
+.navBox#Tab2 .classBox{
+    dl{
+        @extend %emergency; 
+    }
+}
+
+

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import "basetype";
+
+.signal{
+    @extend %TabNav;
+    .Tab1,.Tab2{
+        color:#999;
+    }
+    .Tab1.on,.Tab2.on{
+        color:$basecolor;
+        .iconfont{
+           
+            font-size:pxToRem(56px);
+        }
+    }
+
+}

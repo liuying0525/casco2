@@ -1,0 +1,70 @@
+
+@charset "UTF-8";
+
+@import "../basic/mixin";
+
+.page{
+	box-sizing:border-box;
+	width:100%;
+	height:100vh;
+	padding:0 pxToRem(30px);
+	background-color:#eaeff6;
+	.page-logo{
+	  	width:100%;
+		padding-top:pxToRem(80px);
+		text-align:center;
+		img{
+			width:pxToRem(100px);
+	  		height:pxToRem(100px);
+	  		margin:auto;
+		}
+	}
+	.page-title{
+		width:100%;
+		color:#494a4b;
+		margin-top:pxToRem(60px);
+		font-size:pxToRem(26px);
+		text-align:center;
+	}
+	.page-btn{
+		width:90%;
+		margin:pxToRem(60px) auto;
+		@include fatherBox(row);
+		@include fj(space-between);
+		a{
+			// padding:pxToRem(20px) pxToRem(20px);
+			@include wh(160px,60px);
+			color:#fff;
+			background:linear-gradient(to bottom,#f0b18f,#e18654);
+			font-size:pxToRem(26px);
+			@include borderRadius(6px);
+			@include remove;
+			text-align:center;
+		}
+	}
+	.page-btn2{
+		width:90%;
+		margin:pxToRem(60px) auto;
+		@include fatherBox(row);
+		@include fj(center);
+		a{
+			// padding:pxToRem(20px) pxToRem(20px);
+			@include wh(160px,60px);
+			color:#fff;
+			background:linear-gradient(to bottom,#f0b18f,#e18654);
+			font-size:pxToRem(26px);
+			@include borderRadius(6px);
+			@include remove;
+			text-align:center;
+		}
+	}
+	.page-banner{
+		width:100%;
+		margin-top:pxToRem(80px);
+		text-align:center;
+		img{
+			width:pxToRem(360px);
+			height:pxToRem(360px);
+		}
+	}
+}
