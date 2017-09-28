@@ -15,7 +15,7 @@
 				<div class="swiper ">				
 					<div class="swiper-container mui-content">
 						<div class="swiper-wrapper mui-content-padded">
-							<div class="swiper-slide">
+							<!--<div class="swiper-slide">
 								<img src="../images/siDetails/sidetails_1.png" alt="" data-preview-src="" data-preview-group="1"/>
 							</div>
 							<div class="swiper-slide">
@@ -23,34 +23,34 @@
 							</div>
 							<div class="swiper-slide">
 								<img src="../images/siDetails/sidetails_1.png" alt="" data-preview-src="" data-preview-group="3"/>
-							</div>
+							</div>-->
 						</div>
 					</div>
 					<div class="swiper-pagination" id="pagination"></div>
 				</div>
 				<article class="sidetails-top">
 					<ul>
-						<li><span>站点</span><span>万年场</span></li>
+						<!--<li><span>站点</span><span>万年场</span></li>
 						<li><span>设备名称</span><span>ABJ#180-E</span></li>
 						<li><span>设备类型</span><span>区间移频#9J-06-HS</span></li>
 						<li><span>发生时间</span><span>2017年08月15日 12:09:38</span></li>
-						<li><span>故障描述</span><span>道岔失表示：室外开路室外开路室外开路室外开路室外开路室外开路</span></li>
+						<li><span>故障描述</span><span>道岔失表示：室外开路室外开路室外开路室外开路室外开路室外开路</span></li>-->
 					</ul>
-					<button>处理完成</button>
+					<!--<button>处理完成</button>-->
 				</article>
 				<div class="sidetails-center">
 					<h6>
 						<span>维修建议</span>
-						<span>维修人：艾小叶、张吉珐</span>
+						<!--<span>维修人：艾小叶、张吉珐</span>-->
 					</h6>
 					<ul class="on">						
-						<li>
+						<!--<li>
 							<span><em>10:51:29</em><em>上午</em></span>
 							<span><em>鲍兵</em><em>鲍兵的维修建议，先占位置，占位置，占位置，占位置。</em></span>
-						</li>
+						</li>-->
 					</ul>
 					<ul class="off">
-						<li>
+						<!--<li>
 							<span><em>10:09:46</em><em>上午</em></span>
 							<span><em>张吉珐</em><em>维修建议，先占位置，占位置，占位置，占位置，先占位置，占位置，占位置，占位置。</em></span>
 						</li>
@@ -73,12 +73,12 @@
 						<li>
 							<span><em>09:42:19</em><em>上午</em></span>
 							<span><em>艾小叶</em><em>维修建议，先占位置，占位置，占位置，占位置，先占位置，占位置，占位置，占位置。</em></span>
-						</li>
+						</li>-->
 
 					</ul>
 				</div>				
 				<footer>
-					<input type="text" name="" id="" value="" placeholder="添加处理建议"/>
+					<input type="text" name="" id="" value="" placeholder="添加处理过程"/>
 					<icon class="iconfont ">&#xe603;</icon>
 				</footer>
 			</div>
@@ -91,17 +91,4 @@
 	<script src="../js/siDetails/mui.zoom.js"></script>
 	<script src="../js/siDetails/mui.previewimage.js"></script>
 	<script type="text/javascript" src="../js/siDetails/siDetails.js"  charset="utf-8"></script>
-		<script type="text/javascript">
-		$(function(){
-			$.ajax({
-				type:"post",
-				url:"http://192.168.3.127:8084/WebReport/csmis/fault/alarmDetailAPP.tg",
-				async:true,
-				data:{id:"a6726cae-4771-4ac7-9547-cd6e2a413c33"},
-				success:function(data){
-					console.log(data);
-				}
-			});
-		})
-	</script>
 </html>

@@ -3,6 +3,7 @@
 
 
 var setUrl = "http://115.29.234.80:8484";
+var getUrl="http://192.168.3.127:8084";
 (function (doc, win) { 
 	
 	
