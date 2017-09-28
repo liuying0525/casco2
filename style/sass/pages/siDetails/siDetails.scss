@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import "basetype";
+
+.sidetails{
+  // box-sizing: border-box;
+  font-size: $font24;
+  color:#333; 
+}
+
+ .swiper-container {
+        width: auto;
+        height: pxToRem(402px);
+       margin:0;
+  
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        img{
+            height:auto;
+            width:94%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+//siDetails-swiper
+.swiper-slide{
+    width:80% !important;
+}
+.swiper-slide-active{
+        transform: scale(1.08) !important;
+}
+
+.swiper{
+    padding-top:pxToRem(20px);                 
+        border-bottom:2px solid #e3e3e3;
+        padding-bottom:pxToRem(57px);
+        position: relative;
+}
+
+.swiper-pagination{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    left:0;
+    bottom:0;
+    background: none;
+    span{
+        margin:0 5px;
+    }
+}
+
+.mui-content-padded{
+    margin:0;
+}
+
+
+//内容部分
+.sidetails-top{
+    @include fatherBox(column nowrap);
+    width: 100%;
+    padding-top:pxToRem(22px);
+    ul{        
+    background: #fff;
+        @include fatherBox(column nowrap);
+        li{
+            @include fatherBox(row nowrap);
+            span{               
+            padding:pxToRem(20px) 0;
+                line-height: pxToRem(34px);
+                width: pxToRem(540px);
+       display:inline-block;  
+       text-align:left;  
+       color:#333;   
+       font-size:$font24;  
+       box-sizing: border-box;
+       padding-left:pxToRem(22px);
+        &:first-child{
+            padding-left:0;
+            padding-right:pxToRem(22px);
+            color:#555;
+           width: pxToRem(165px);
+           text-align: right;
+       border-right:1px solid #e3e3e3;
+                }
+            }
+        }
+    }
+    
+    button{
+      margin:pxToRem(20px) auto; 
+      @include wh(160px,50px);
+     text-align: center;
+     justify-content:center;
+     border-radius: pxToRem(20px);
+           background-image:-webkit-linear-gradient(90deg,#e99e78,#dd6855, #d23736);
+          background-image:linear-gradient(90deg,#e99e78,#dd6855,#d23736);
+          border:none;
+          color:#fff;
+          font-size:pxToRem(22px);
+    }
+}
+
+.sidetails-center{
+    background: #fff;
+    h6{
+        font-weight: normal;
+        span{
+            display: inline-block;
+            height:pxToRem(75px);
+            line-height: pxToRem(75px);
+             color:#333;
+            &:first-child{
+                font-size: $font26;
+                padding-left:pxToRem(20px);
+                padding-right:pxToRem(14px);
+               
+            }
+        }
+    }
+    section{
+        background: #fff;
+    }
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background: #f7f7f7;
+    padding:pxToRem(14px) 0;
+    z-index: 10;
+    input{
+        text-align: center;
+        font-size: pxToRem(14px);
+        padding:pxToRem(10px) 0 !important;
+        margin: 0 !important;
+        height:auto !important;
+        line-height:0 !important;
+        border-radius: 0 !important;
+        border:none !important;
+            }
+    icon{
+        position: absolute;
+        top:0.5rem;
+        left:5.3rem;
+        color:#999;
+    }
+}
