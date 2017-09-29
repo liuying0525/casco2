@@ -10,6 +10,8 @@
 		<meta content="telephone=no" name="format-detection">
 		<meta content="email=no" name="format-detection">
 		<title>报警列表</title>
+		<script type="text/javascript" src="../lib/fastclick.js"></script>
+		<link rel="stylesheet" href="../lib/jquery-weui-build/jquery-weui-build/dist/css/jquery-weui.min.css">
 		<link rel="stylesheet" type="text/css" href="../style/css/pages/signal/signal.css"/>
 		<link rel="stylesheet" type="text/css" href="../style/css/pages/report.css">	
 		<link rel="stylesheet" type="text/css" href="../style/css/pages/caveatList.css">
@@ -20,11 +22,13 @@
 				<div class="navBox on" id="Tab1">
 					<!-- 报警列表内容 -->
 					<div class="list-inputArea">
-						<input type="text" value="" name="" >
+						<input type="text" value="" name="" placeholder="选择开始时间" id="startDate">
+						<input type="text" value="" name="" placeholder="选择结束时间" id="endDate">
+						<img src="../images/search.png" alt="icon" id="searchIcon">
 					</div> 
 					<div class="line"></div>
-					<div class="cont">
-						<div class="cont-list">
+					<div class="cont" id="faultList">
+						<!-- <div class="cont-list">
 							<div class="cont-list-date">
 								<span>2017年8月15日</span>
 							</div>
@@ -56,7 +60,7 @@
 									<span>详情</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="navBox" id="Tab2">
@@ -99,4 +103,33 @@
 	<script src="../lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="../js/public.js"  charset="utf-8"></script>
 	<script type="text/javascript" src="../js/signal/signal.js"  charset="utf-8"></script>
+	<script type="text/javascript" src="../lib/jquery-weui-build/jquery-weui-build/dist/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../lib/template.js"></script>
+    <script>
+        $("#startDate").datetimePicker();
+        $("#endDate").datetimePicker();
+	</script>
+	<script type="text/template" id="cont">
+		{{each detailList as value index}}
+			<div class="cont-list">
+				<div class="cont-list-date">
+					<span>{{value.startTime}}</span>
+				</div>
+				<div class="cont-list-item">
+					<div>
+						<span>12:09:38</span>
+						<span class="push">已推送</span>
+					</div>
+					<div>
+						<span>{{value.station}}</span>
+						<span>{{value.content}}</span>
+						<span>结束时间 {{value.endTime}}</span>
+					</div>
+					<div>
+						<span class="detail" did='{{value.id}}'>详情</span>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</script>
 </html>

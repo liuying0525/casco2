@@ -2,7 +2,7 @@
 
 
 
-var setUrl = "http://115.29.234.80:8484";
+var setUrl = "http://192.168.3.127:8084";
 (function (doc, win) { 
 	
 	
@@ -44,17 +44,24 @@ var setUrl = "http://115.29.234.80:8484";
 	} 							
 //		console.log(getParam("did"));		
 
+	// 获取url？后面id参数
+	function GetRequest() {
+		var paraString = location.href.substring(location.href.indexOf("?") + 1, location.href.length).split("&");
+		var id1 = paraString[0].replace("line=", "");
+		return id1;
+	}
+
 	function ajaxfun(url, data, succ) {
     $.ajax({
         type: "POST",
-        url: url,
+		url: url,
         // xhrFields: {
        	// 	withCredentials: true
        	// },
        	// crossDomain: true,
         data: data,
-        dataType: "JSON",
-        success: succ,
+		dataType: "JSON",
+		success: succ,
         error: function() {
             console.log("ajax-error");
         }

@@ -11,18 +11,23 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="email=no" name="format-detection">
     <title>信号综合运维平台</title>
+    <script type="text/javascript" src="../lib/fastclick.js"></script>
+    <link rel="stylesheet" href="../lib/jquery-weui-build/jquery-weui-build/dist/css/jquery-weui.min.css">
     <link rel="stylesheet" type="text/css" href="../style/css/pages/list.css">
 </head>
 <body>
-
+    <!-- 搜索area -->
     <div class="list-inputArea">
-       <input type="text" value="" name="" >
+       <input type="text" value="" name="start" placeholder="选择开始时间" id="startDate">
+       <input type="text" value="" name="end" placeholder="选择结束时间" id="endDate">
+       <img src="../images/search.png" alt="icon" id="searchIcon">
     </div> 
-
+    <!-- 搜索area end -->
     <div class="line"></div>
 
+    <!-- 列表 start -->
     <ul class="list-cont">
-        <li class="list-item">
+        <!-- <li class="list-item">
             <div class="list-item-line">
                 <span>4号线</span>
                 <span></span>
@@ -36,24 +41,50 @@
                     <span></span>
                 </span>
             </div>
-        </li>
-        <li class="list-item">
+        </li> -->
+    </ul>
+    <!-- 列表 end -->
+    <script type="text/javascript" src="../lib/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="../js/public.js"></script>
+    <script type="text/javascript" src="../js/pages/list.js"></script>
+    <script type="text/javascript" src="../lib/template.js"></script>
+    <script type="text/javascript" src="../lib/jquery-weui-build/jquery-weui-build/dist/js/jquery-weui.min.js"></script>
+    <script>
+        $("#startDate").datetimePicker();
+        $("#endDate").datetimePicker();
+    </script>
+    <script type="text/template" id="contList">
+        {{each data as value index}}
+            <li class="list-item" sid='{{value.line}}'>
                 <div class="list-item-line">
-                    <span>4号线</span>
+                    <span>{{value.line}}</span>
                     <span></span>
                 </div>
                 <div class="list-item-num">
                     <span>报警数量</span>
-                    <span>1000</span>
+                    <span>{{value.sum}}</span>
                 </div>
+                {{if value.sum>0&&value.sum<=5}}
                 <div class="list-item-icon">
                     <span>
                         <span></span>
                     </span>
                 </div>
+                {{else if value.sum===0}}
+                <div class="list-item-icon">
+                    <span class="border-color">
+                        <span class="border-color"></span>
+                    </span>
+                </div>
+                {{else if value.sum>5}}
+                <div class="list-item-icon">
+                    <span class="yellow">
+                        <span class="yellow"></span>
+                    </span>
+                </div>
+                {{/if}}
             </li>
-    </ul>
-    
-    <script type="text/javascript" src="../js/public.js"></script>
+        {{/each}}
+    </script>
 </body>
 </html>

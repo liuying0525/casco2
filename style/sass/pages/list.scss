@@ -6,14 +6,20 @@
 
 //搜索区域
 .list-inputArea{
+    @include fj(space-around);
     width:100%;
     height:pxToRem(60px);
     margin-top:pxToRem(20px);
     input[type='text']{
-        width: 100%;
+        width: 40%;
         height:100%;
         color:#9f9f9f;
         font-size:pxToRem(18px);
+        text-indent: pxToRem(20px);
+    }
+    img{
+        width:pxToRem(60px);
+        height: pxToRem(60px);
     }
 }
 
@@ -49,9 +55,10 @@
             span{
                 &:nth-child(2){
                     display: block;
-                    @include wh(80px,20px);
+                    @include wh(96px,14px);
                     background:#46b95f;
                     @include borderRadius(6px);
+                    margin-top:pxToRem(10px);
                 }
             }
         }
@@ -87,6 +94,12 @@
                     -ms-border-radius:50%;
                     border-radius: 50%;
                 }
+            }
+            .border-color{
+                border: pxToRem(6px) solid #41a659;
+            }
+            .yellow{
+                border: pxToRem(6px) solid yellow;
             }
         }
     }

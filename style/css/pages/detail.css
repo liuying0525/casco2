@@ -2,7 +2,7 @@
  * @Author: sobrown 
  * @Date: 2017-09-14 13:51:38 
  * @Last Modified by: sobrown
- * @Last Modified time: 2017-09-14 17:15:46
+ * @Last Modified time: 2017-09-15 11:22:09
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -524,7 +524,8 @@ a:focus {
 body, html {
   background-color: #efefef;
   box-sizing: border-box;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-bottom: 40px; }
 
 a, span {
   display: inline-block; }
