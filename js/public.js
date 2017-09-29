@@ -1,5 +1,4 @@
-﻿
-var setUrl = "http://192.168.3.127:8084";
+﻿var setUrl = "http://192.168.3.127:8084";
 (function (doc, win) { 
 	
    var docEl = doc.documentElement,    
