@@ -1,0 +1,95 @@
+/*
+ * @Author: sobrown 
+ * @Date: 2017-09-15 10:29:23 
+ * @Last Modified by: sobrown
+ * @Last Modified time: 2017-09-15 14:47:25
+ */
+#container {
+  padding: 0.5rem 0.75rem; }
+
+.report-date {
+  font-size: 0.45rem;
+  color: #5d5d5d;
+  text-align: center;
+  margin-top: 0.5rem; }
+.report-body {
+  margin-top: 0.75rem;
+  padding: 0 0.75rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e3e3e3; }
+  .report-body-title, .report-body-summary {
+    padding: 0.75rem 0;
+    font-size: 0.65rem;
+    color: #666; }
+  .report-body-img {
+    width: 100%;
+    height: 7.5rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -ms-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    border-radius: 0.15rem;
+    background: url(../../../images/banner@2x.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .report-body-line {
+    width: 100%;
+    height: 2px;
+    background: #e3e3e3; }
+  .report-body-all {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    font-size: 0.65rem;
+    color: #666; }
+    .report-body-all span:nth-child(2) {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 414371 */
+  src: url("//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.eot");
+  src: url("//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.woff") format("woff"), url("//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.ttf") format("truetype"), url("//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.report-body-img {
+  background: none; }
+  .report-body-img img {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto; }
+
+.report-body-all span:nth-child(2) {
+  color: #aaaaaa;
+  font-weight: normal; }
+
+.report-body-line {
+  height: 0.05rem; }
+
+.report-body-summary {
+  color: #808080; }
+
+.report-body-title {
+  color: #0e0e0e; }
+
+.report-body-all {
+  padding: 0.3rem 0; }
+
+/*# sourceMappingURL=alarmPush.css.map */

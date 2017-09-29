@@ -1,0 +1,46 @@
+ @charset "UTF-8";
+ @import "report";
+ 
+ @font-face {
+  font-family: 'iconfont';  /* project id 414371 */
+  src: url('//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.eot');
+  src: url('//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_414371_l4rrwt0mmk9vbo6r.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+ 
+ .report-body-img{
+     background: none;
+     img{
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+     }
+ }
+
+.report-body-all span:nth-child(2){
+    color:#aaaaaa;
+    font-weight: normal;
+}
+
+.report-body-line{
+    height:pxToRem(2px);
+}
+.report-body-summary{
+    color:#808080;
+}
+.report-body-title{
+   color:#0e0e0e;
+}
+.report-body-all{
+    padding:pxToRem(12px) 0;
+}
