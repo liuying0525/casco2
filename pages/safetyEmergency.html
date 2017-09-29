@@ -28,7 +28,7 @@
 						</dl>
 						<dl>
 							<dt>ATS系统</dt>
-							<dd>全线列车无法使用ATO\ATP驾驶模式</dd>
+							<dd>全线列车无法使用ATO、ATP驾驶模式</dd>
 							<dd>全线列车出现车次框白色闪烁，ATS将无法对线上列车进行操作，如ATS扣车、紧停、临时限速、更改车次号、追踪号、进路无法自动触发等</dd>
 							
 						</dl>
@@ -40,7 +40,19 @@
 							<dt>DCS系统</dt>
 							<dd>DCS网络故障导致全线或多站系统通信中断</dd>
 						</dl>
-
+						<h6>通信专业</h6>
+						<dl>
+							<dt>传输子系统</dt>
+							<dd>全线的无线、有线调度电话或公务电话不能正常使用</dd>
+						</dl>
+						<dl>
+							<dt>UPS子系统</dt>
+							<dd>全线或控制中心UPS故障导致传输、无线、有线调度电话或公务电话不能正常使用，已影响综合监控或通信设备正常使用</dd>
+						</dl>
+						<dl>
+							<dt>无线子系统</dt>
+							<dd>全线列车无法正常通信，无法群呼</dd>
+						</dl>						
 					</div>
 					<div class="classBox" id="cTab2">
 						<h6>信号专业</h6>
@@ -64,9 +76,42 @@
 							<dt>DCS系统</dt>
 							<dd>DCS网络故障导致单站或单系统通信中断</dd>
 						</dl>
+						<h6>通信专业</h6>
 						<dl>
-							<dt>通信专业</dt>
-							<dd>传输子系统</dd>
+							<dt>传输子系统</dt>
+							<dd>传输网管上有2M业务告警、光板告警、CSE板报警或 传输系统脱管等，已影响全线或多站无线、有线调度电话或公务电话正常使用</dd>
+						</dl>
+						<dl>
+							<dt>公务电话子系统</dt>
+							<dd>全线公务电话电话不能使用</dd>
+						</dl>
+						<dl>
+							<dt>有线调度电话子系统</dt>
+							<dd>全线有线调度电话均不能正常使用</dd>
+						</dl>
+						<dl>
+							<dt>UPS子系统</dt>
+							<dd>单站UPS市电失电告警，已影响综合监控或通信设备正常使用</dd>
+						</dl>
+						<dl>
+							<dt>无线子系统</dt>
+							<dd>车站（多站或全线）无线800M进入单站集群模式或全线列车无法正常通信</dd>
+						</dl>
+						<dl>
+							<dt>CCTV子系统</dt>
+							<dd>多站或全线CCTV摄像头黑屏，无法监控图像</dd>
+						</dl>
+						<dl>
+							<dt>PIS子系统</dt>
+							<dd>多站或全线PIS显示屏黑屏，或全线PIS网络故障，多站或全线PIS到站时间异常，大面积影响客运服务</dd>
+						</dl>
+						<dl>
+							<dt>计算机网络子系统</dt>
+							<dd>全线全部终端电脑（服务器）上网异常</dd>
+						</dl>
+						<dl>
+							<dt>广播子系统</dt>
+							<dd>全线广播均不能正常使用</dd>
 						</dl>
 					</div>
 					<div class="classBox"id="cTab3">						
@@ -90,7 +135,48 @@
 						<dl>
 							<dt>DCS系统</dt>
 							<dd>单网AP模块报警</dd>
-							<dd>单网A交换机报警</dd>
+							<dd>单网交换机报警</dd>
+						</dl>
+						<h6>通信专业</h6>
+						<dl>
+							<dt>传输子系统</dt>
+							<dd>传输网管上有2M业务告警、光板告警、CSE板报警或 传输系统脱管等，已影响全线或多站无线、有线调度电话或公务电话正常使用</dd>
+						</dl>
+						<dl>
+							<dt>公务电话子系统</dt>
+							<dd>单站公务电话均不能使用</dd>
+						</dl>
+						<dl>
+							<dt>有线调度电话子系统</dt>
+							<dd>单站的有线调度电话均不能正常使用</dd>
+						</dl>
+						<dl>
+							<dt>UPS子系统</dt>
+							<dd>单站UPS网管告警（如：UPS主机风扇故障、智能配电屏后备UPS故障、蓄电池故障告警），但没有影响设备正常使用</dd>
+						</dl>
+						<dl>
+							<dt>无线子系统</dt>
+							<dd>单站的无线800M进入单站集群模式，单个固定台、车载语音台不能正常使用</dd>
+						</dl>
+						<dl>
+							<dt>CCTV子系统</dt>
+							<dd>控制中心调度大厅大屏全部黑屏或单站CCTV摄像头黑屏，无法监控图像</dd>
+						</dl>
+						<dl>
+							<dt>PIS子系统</dt>
+							<dd>单站PIS显示屏黑屏，PIS到站时间异常，大面积影响客运服务</dd>
+						</dl>
+						<dl>
+							<dt>计算机网络子系统</dt>
+							<dd>单站全部终端电脑（服务器）上网异常</dd>
+						</dl>
+						<dl>
+							<dt>广播子系统</dt>
+							<dd>单站广播均不能正常使用</dd>
+						</dl>
+						<dl>
+							<dt>视频会议系统</dt>
+							<dd>视频会议系统不能正常使用</dd>
 						</dl>
 					</div>
 				</div>
@@ -155,6 +241,107 @@
 								</ul>
 							</dd>
 						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>安技室主任</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;3分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/通知</span>
+										<span>II类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>中心主任/分管副主任</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;4分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/通知</span>
+										<span>II类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;60分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>专职司机</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;4分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/到岗</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;10分钟车内待命</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>回复故障处理情况（中心内部）</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>及时发布</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>及时发布</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>--</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>安排人员设备保驾</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>视情况</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>视情况</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>--</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>回复故障情况（维修调度）</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>及时向维调回复故障处理情况及原因</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>及时向维调回复故障处理情况及原因</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>--</li>
+								</ul>
+							</dd>
+						</dl>
+
 					</div>
 					<div class="classBox" id="bTab2">
 						<h6>调度岗位-生产调度</h6>
@@ -200,18 +387,90 @@
 								<b>响应时间：</b>
 								<ul>
 									<li>通知时间</li>
+									<li>&le;2分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;30分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>抢险、信息、技术负责人</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
 									<li>&le;3分钟</li>
 									<li>故障类型/受理情况</li>
 									<li>
 										<span>I类/到岗</span>
 										<span>II类/到岗</span>
-										<span>III类/到岗</span>
+										<span>III类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;30分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>安技室专业组长/专工</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;3分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/通知</span>
 									</li>
 									<li>要求到岗时间</li>
 									<li>&le;60分钟</li>
 								</ul>
 							</dd>
 						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>OCC工班值班人员</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;3分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+										<span>III类/通知</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;10分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>相应设备承包商</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>&le;4分钟</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>I类/到岗</span>
+										<span>II类/到岗</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>&le;30分钟</li>
+								</ul>
+							</dd>
+						</dl>
+						
 					</div>
 					<div class="classBox on" id="bTab3">
 						<h6>调度岗位-生产调度</h6>
@@ -234,7 +493,7 @@
 							</dd>
 						</dl>
 						<dl>
-							<dt><b>通知岗位：</b><span>中心技术志愿队</span></dt>
+							<dt><b>通知岗位：</b><span>中心技术支援队</span></dt>
 							<dd>
 								<b>响应时间：</b>
 								<ul>
@@ -267,6 +526,23 @@
 								</ul>
 							</dd>
 						</dl>
+						<dl>
+							<dt><b>通知岗位：</b><span>相关专业设备联动情况</span></dt>
+							<dd>
+								<b>响应时间：</b>
+								<ul>
+									<li>通知时间</li>
+									<li>视情况</li>
+									<li>故障类型/受理情况</li>
+									<li>
+										<span>视情况</span>
+									</li>
+									<li>要求到岗时间</li>
+									<li>视情况</li>
+								</ul>
+							</dd>
+						</dl>
+
 					</div>
 				</div>
 			</div>
