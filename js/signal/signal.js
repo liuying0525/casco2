@@ -64,8 +64,10 @@ $(function(){
 		detail:function(){
 			$(".detail").each(function(k,v){
 				$(v).click(function(){
+					
 					var id = $(this).attr("did");
 					localStorage.setItem("id",id);
+					location.href="siDetails.html";
 				});
 			});
 		},

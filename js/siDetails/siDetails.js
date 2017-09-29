@@ -16,8 +16,8 @@
 	//动态渲染数据
 	$.ajax({
 		type:"POST",
-		url:getUrl+"/WebReport/csmis/fault/alarmDetailAPP.tg",
-		data:{id:"1264374f-fc8c-41ff-a8d8-100e4e6bcae2"},
+		url:setUrl+"/WebReport/csmis/fault/alarmDetailAPP.tg",
+		data:{id:localStorage.getItem("id")},
 		dataType:"json",
 		success:function(res){
 			if(res.result!=0) return;		
@@ -51,7 +51,7 @@
 			
 			$.each(manualList, function(item) {
 				str+='<div class="swiper-slide">';
-				str+='<img src="'+manualList[item]+'" alt="" data-preview-src="" data-preview-group="'+item+'"/>';
+				str+='<img src="'+setUrl+'/WebReport'+manualList[item]+'" alt="" data-preview-src="" data-preview-group="'+item+'"/>';
 				str+='</div>';
 			});
 			$(".swiper-wrapper").append(str);		

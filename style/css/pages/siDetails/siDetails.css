@@ -518,7 +518,8 @@ a:focus {
 body, html {
   background-color: #efefef;
   box-sizing: border-box;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-bottom: 40px; }
 
 a, span {
   display: inline-block; }
